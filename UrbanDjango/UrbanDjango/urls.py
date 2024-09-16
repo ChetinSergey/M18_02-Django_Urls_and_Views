@@ -21,5 +21,5 @@ from task2.views import class_t, func_t
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ct/', class_t),
-    path('ft/', func_t),
+    path('ft/', FuncT.as_view()),
 ]
